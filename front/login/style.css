@@ -1,0 +1,91 @@
+@import url(../style.css);
+
+.oculto {
+    display: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/fundo.jpg") ;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid transparent;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    animation: border-color-change 4s infinite linear;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes border-color-change {
+    0% {
+        border-color: #3498db;
+    }
+
+    25% {
+        border-color: #2ecc71;
+    }
+
+    50% {
+        border-color: #e74c3c;
+    }
+
+    75% {
+        border-color: #f39c12;
+    }
+
+    100% {
+        border-color: #db349b;
+    }
+}
+
+form {
+    margin-top: 20px;
+}
+
+#formCadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label,
+input,
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#bt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 20px;
+    background-color: rgb(225, 225, 225);
+}
+
+#bt:hover{
+    background-color: white;
+}
